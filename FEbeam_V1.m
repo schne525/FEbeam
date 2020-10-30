@@ -1210,7 +1210,7 @@ run_proc_btn = uicontrol(proc_window,"Style","pushbutton","Position",...
         %disp(path_list);
         path = path_list{1};
         idcs = strfind(path,filesep);
-        new_path = strcat(path(1:idcs(end-2)-1),'\all I V curves\');
+        new_path = strcat(path(1:idcs(end-2)-1),'\all IV curves\');
         name = strcat('I_V_',num2str(gradient),'_MVm');
         %global filename_save_IV;
         filename_save_IV=strcat(new_path,name,'.mat');
